@@ -7,7 +7,7 @@ export default {
 
 <template>
     <footer id="site_footer">
-        <div class="container">
+        <div class="container_fluid">
             <div class="footer_head">
                 <ul>
                     <li>
@@ -52,7 +52,68 @@ export default {
                 </ul>
             </div>
         </div>
-        <div class="footer_main"></div>
+        <div class="footer_main">
+            <div class="container_row d-flex justify-content-center">
+                <div class="row d-flex justify-content-center">
+                    <div class="col d-flex">
+                        <div class="col">
+                            <h3>DC Comics</h3>
+                            <ul>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                            </ul>
+                            <h3>Shop</h3>
+                            <ul>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>DC Comics</h3>
+                            <ul>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                            </ul>
+                            <h3>Shop</h3>
+                            <ul>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>DC Comics</h3>
+                            <ul>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                            </ul>
+                            <h3>Shop</h3>
+                            <ul>
+                                <li><a href="#">Characters</a></li>
+                                <li><a href="#">Characters</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <img width="300" src="../assets/img/dc-logo-bg.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="footer_bottom d_flex">
             <button class="btn">Sign-Up Now!</button>
             <div class="social_contacts">
@@ -102,7 +163,7 @@ export default {
 </template>
 
 <style>
-.container {
+.container_fluid {
     background-color: blue;
     display: flex;
     justify-content: center;
@@ -140,6 +201,28 @@ export default {
     height: 300px;
 }
 
+.space_between {
+    justify-content: space-between;
+}
+
+.footer_main h3 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.footer_main li {
+    list-style: none;
+}
+
+.footer_main a {
+    text-decoration: none;
+    color: grey;
+    font-size: 0.8rem;
+}
+
 .footer_bottom {
     display: flex;
     justify-content: space-around;
@@ -168,7 +251,7 @@ export default {
     align-items: center;
 }
 
-.social_icons {
+.social_icons ul {
     display: flex;
     gap: 1rem;
 }
