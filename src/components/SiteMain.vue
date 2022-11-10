@@ -10,5 +10,8 @@ export default {
 </template>
 
 <style>
-
+main {
+    height: 150px;
+    background-color: black;
+}
 </style>
