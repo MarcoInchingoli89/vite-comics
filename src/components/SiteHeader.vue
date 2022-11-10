@@ -25,7 +25,7 @@ export default {
     </header>
 </template>
 
-<style>
+<style scoped>
 .d_flex {
     display: flex;
     justify-content: space-around;
