@@ -1,15 +1,17 @@
 <script>
 import SiteHeader from './components/SiteHeader.vue'
-data(); {
-  return {
-
-  }
-}
+import SiteMain from './components/SiteMain.vue'
 
 export default {
   name: 'App',
   components: {
-    SiteHeader
+    SiteHeader,
+    SiteMain
+  },
+  data() {
+    return {
+
+    }
   }
 }
 
@@ -17,6 +19,7 @@ export default {
 
 <template>
   <site-header></site-header>
+  <site-main></site-main>
 </template>
 
 <style>
