@@ -1,6 +1,52 @@
 <script>
 export default {
-    name: 'SiteHeader'
+    name: 'SiteHeader',
+    data() {
+        return {
+            linkNavbar: [
+                {
+                    name: 'Characters',
+                    href: '#'
+                },
+                {
+                    name: 'Comics',
+                    href: '#'
+                },
+                {
+                    name: 'Movies',
+                    href: '#'
+                },
+                {
+                    name: 'TV',
+                    href: '#'
+                },
+                {
+                    name: 'Games',
+                    href: '#'
+                },
+                {
+                    name: 'Collectibles',
+                    href: '#'
+                },
+                {
+                    name: 'Videos',
+                    href: '#'
+                },
+                {
+                    name: 'Fans',
+                    href: '#'
+                },
+                {
+                    name: 'News',
+                    href: '#'
+                },
+                {
+                    name: 'Shop',
+                    href: '#'
+                },
+            ]
+        }
+    },
 }
 
 </script>
@@ -10,22 +56,23 @@ export default {
         <div class="navbar d_flex">
             <img class="logo" width="80" src="../assets/img/dc-logo.png" alt="">
             <ul class="d_flex">
-                <li><a href="">Characters</a></li>
-                <li><a href="">Comics</a></li>
-                <li><a href="">Movies</a></li>
-                <li><a href="">TV</a></li>
-                <li><a href="">Games</a></li>
-                <li><a href="">Collectibles</a></li>
-                <li><a href="">Videos</a></li>
-                <li><a href="">Fans</a></li>
-                <li><a href="">News</a></li>
-                <li><a href="">Shop</a></li>
+                <li v-for="link in linkNavbar"><a href="{{ link.href }}">{{ link.name }}</a></li>
             </ul>
         </div>
     </header>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as *;
+
+/* header {
+
+    ul {
+        list-style: none;
+        display: flex;
+    }
+} */
+
 .d_flex {
     display: flex;
     justify-content: space-around;

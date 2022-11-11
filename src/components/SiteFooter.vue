@@ -158,11 +158,10 @@ export default {
                 </div>
             </div>
         </div>
-        <div class="footer_end"></div>
     </footer>
 </template>
 
-<style>
+<style lang="scss" scoped>
 .container_fluid {
     background-color: blue;
     display: flex;
@@ -171,29 +170,29 @@ export default {
 
 .footer_head {
     max-width: 80%;
-}
 
-.footer_head .footer_icon img {
-    padding: 1rem 1rem;
-}
+    .footer_icon img {
+        padding: 1rem 1rem;
+    }
 
-.footer_head .text {
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 0.7rem;
-}
+    .text {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+    }
 
-.footer_head ul {
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    gap: 3rem;
-}
+    ul {
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        gap: 3rem;
+    }
 
-.footer_head li {
-    display: flex;
-    align-items: center;
+    li {
+        display: flex;
+        align-items: center;
+    }
 }
 
 .footer_main {
@@ -258,10 +257,5 @@ export default {
 
 .social_icons li {
     list-style: none;
-}
-
-.footer_end {
-    height: 30px;
-    background-color: darkslateblue;
 }
 </style>
