@@ -1,6 +1,10 @@
 <script>
+import ComicItem from '../components/ComicItem.vue'
 export default {
     name: 'SiteMain',
+    components: {
+        ComicItem
+    },
     data() {
         return {
             comics: [
@@ -88,13 +92,13 @@ export default {
         <div class="container_fluid">
             <div class="jumbotron"></div>
             <div class="row">
-                <div v-for="comicBook in comics" class="col-2">
+                <!-- <div v-for="comicBook in comics" class="col-2">
                     <img class="py-2 px-3" width="100" :src="comicBook.thumb" alt="">
                     <h3 class="text_white px-3">{{ comicBook.series }}</h3>
-                </div>
+                </div> -->
+                <ComicItem v-for="comicBook in comics" :image="comicBook.thumb" :name="comicBook.series" />
             </div>
         </div>
-
     </main>
 </template>
 
