@@ -103,8 +103,11 @@ export default {
     font-weight: bold;
 }
 
+.navbar li:hover {
+    border-bottom: 4px solid $dc-primary;
+}
+
 .navbar a:hover {
     color: $dc-primary;
-    border-bottom: 4px solid $dc-primary;
 }
 </style>
