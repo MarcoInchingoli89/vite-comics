@@ -20,5 +20,6 @@ export default {
 .text_white {
     color: white;
     font-size: 0.9rem;
+    text-transform: uppercase;
 }
 </style>

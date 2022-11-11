@@ -162,8 +162,10 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@use '../assets/scss/partials/variables' as *;
+
 .container_fluid {
-    background-color: blue;
+    background-color: $dc-primary;
     display: flex;
     justify-content: center;
 }
@@ -225,12 +227,12 @@ export default {
 .footer_bottom {
     display: flex;
     justify-content: space-around;
-    background-color: darkgrey;
+    background-color: $dc-dark;
 }
 
 .footer_bottom .btn {
-    border: 2px solid blue;
-    background-color: darkgrey;
+    border: 2px solid $dc-primary;
+    background-color: $dc-dark;
     color: white;
     text-transform: uppercase;
     font-weight: bold;

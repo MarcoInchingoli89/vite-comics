@@ -104,7 +104,7 @@ export default {
 }
 
 .navbar a:hover {
-    color: blue;
-    border-bottom: 4px solid blue;
+    color: $dc-primary;
+    border-bottom: 4px solid $dc-primary;
 }
 </style>
